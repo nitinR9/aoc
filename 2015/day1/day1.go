@@ -7,13 +7,13 @@ import (
 
 func main() {
 	var floor int64 = 0
-	common.GetFile("input.txt")
+	var input = common.GetFile("input.txt")
 	var i = 0
-	for ; i < len(common.Input); i++ {
-		if common.Input[i] == '(' {
+	for ; i < len(input); i++ {
+		if input[i] == '(' {
 			floor++
 		}
-		if common.Input[i] == ')' {
+		if input[i] == ')' {
 			floor--
 		}
 		// extra code for part 2

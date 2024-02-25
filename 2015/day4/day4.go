@@ -101,8 +101,8 @@ func taskRoutines(input string, padlength int, ques int) {
 }
 
 func main() {
-	common.GetFile("input.txt")
-	task(common.Input, 5, 1)
-	task(common.Input, 6, 2)
-	taskRoutines(common.Input, 6, 3)
+	input := common.GetFile("input.txt")
+	task(input, 5, 1)
+	task(input, 6, 2)
+	taskRoutines(input, 6, 3)
 }

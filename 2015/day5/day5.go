@@ -106,7 +106,7 @@ func Part2(input string, num int) {
 }
 
 func main() {
-	common.GetFile("input.txt")
-	Part1(common.Input, 1)
-	Part2(common.Input, 2)
+	input := common.GetFile("input.txt")
+	Part1(input, 1)
+	Part2(input, 2)
 }

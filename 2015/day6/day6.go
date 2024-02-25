@@ -126,7 +126,7 @@ func Part2(input string) {
 }
 
 func main() {
-	common.GetFile("input.txt")
-	Part1(common.Input)
-	Part2(common.Input)
+	input := common.GetFile("input.txt")
+	Part1(input)
+	Part2(input)
 }

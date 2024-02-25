@@ -77,8 +77,7 @@ func part2(result []string) {
 }
 
 func main() {
-	common.GetFile("input.txt")
-	result := strings.Split(common.Input, "\n")
+	result := common.Process("input.txt")
 	part1(result)
 	part2(result)
 }
