@@ -82,10 +82,6 @@ function travel(pos, direction){
 function isLooping(arr, pos, direction){
     let [row, col] = pos, dir = direction, map = arr, turns = 0
     
-    // console.log(map.map(v => v.join('')).join('\n'))
-    // for (i = 0; i < 100000000; i++) {}
-    // console.clear()
-    
     while(true){
         const [r1, c1] = nextPos([row, col], dir)
         turns++
@@ -117,7 +113,6 @@ function getAllObstructions(pos, dir){
     for(let i=0; i< MAX_ROWS; i++){
         for(let j=0; j< MAX_COLS; j++){
             if (hasVisitedOnPath(i, j)){
-                // console.log('has path', i, j)
                 const temp = map[i][j]
                 map[i][j] = '#'
                 if (isLooping(map, pos, dir)){
@@ -140,7 +135,5 @@ function getAllObstructions(pos, dir){
     console.timeEnd('Time part1')
     console.time('Time part2')
     console.log('Part2:', getAllObstructions(pos, dir))
-    console.timeEnd('Time part2')
-    // console.log(input.map(v => v.join('')).join('\n'))
-    
+    console.timeEnd('Time part2')    
 })()
