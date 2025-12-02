@@ -3,3 +3,4 @@
 *.log
 *.db
 node_modules/
+inputs
