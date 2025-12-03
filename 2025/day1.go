@@ -17,7 +17,6 @@ func day1(){
 		pos, _ := strconv.Atoi(v[1:])
 		result = append(result, Instruction{ direction: rune(v[0]), postitions: pos })
 	}
-
 	pos, p1, p2 := 50, 0, 0
 	for _, v := range result {
 		for i:=0 ; i<v.postitions; i++{
@@ -30,7 +29,6 @@ func day1(){
 				p2++
 			}
 		}
-		
 		if pos == 0 {
 			p1++
 		}

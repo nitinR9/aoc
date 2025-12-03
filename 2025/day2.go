@@ -17,7 +17,7 @@ func checkIdP2(id string) bool {
 	for mid >= 1 {
 		substr := id[:mid]
 		count := strings.Count(id, substr)
-		if  count > 1 && len(id) == (count * mid) {
+		if  len(id) == (count * mid) {
 			return true
 		}
 		mid--
