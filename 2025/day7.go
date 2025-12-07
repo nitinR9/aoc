@@ -4,11 +4,6 @@ import (
 	"fmt"
 )
 
-type Direction struct {
-	row int
-	col int
-}
-
 func travel(grid *[][]rune, row, col int, ans *int64) {
 	rowMax, colMax := len(*grid), len((*grid)[0])
 
