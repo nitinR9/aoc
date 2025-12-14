@@ -116,7 +116,7 @@ func (b *ByteSlice) isOutsideBorders(width int, p1, p2 Vec2d) bool {
 
 func (b *ByteSlice) checkIfRecOutside(width int, p1, p2 Vec2d) bool {
 	
-	if p1.x == p1.y || p1.y == p2.y {
+	if p1.x == p2.x || p1.y == p2.y {
 		return b.isOutsideBorders(width, p1, p2)
 	}
 
