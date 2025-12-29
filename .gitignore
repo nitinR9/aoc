@@ -5,3 +5,4 @@
 node_modules/
 inputs
 *.exe
+*.prof
